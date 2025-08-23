@@ -15,7 +15,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #0b1543 0%, #271757 100%);
+            background: linear-gradient(135deg, #050b23 0%, #1d0c4f 100%);
             min-height: 100vh;
         }
 
@@ -74,10 +74,10 @@
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
             color: white;
-            text-align: center;
-            padding: 5rem 0;
+            padding: 3rem 2rem;
             margin: 2rem 0;
             border-radius: 20px;
+            text-align: left;
         }
 
         .hero h1 {
@@ -111,7 +111,7 @@
             font-size: 1.2rem;
             opacity: 0.9;
             color: white;
-            text-align: left;
+            
         }
 
 
@@ -163,7 +163,7 @@
         }
 
         .blog-post {
-            background: #f8f9ff;
+            background: #050e43;
             padding: 2rem;
             border-radius: 15px;
             border-left: 4px solid #764ba2;
@@ -175,13 +175,13 @@
         }
 
         .blog-post-meta {
-            color: #666;
+            color: #878787;
             font-size: 0.9rem;
             margin-bottom: 0.5rem;
         }
 
         .blog-post h3 {
-            color: #333;
+            color: white;
             margin-bottom: 1rem;
             font-size: 1.4rem;
         }
@@ -317,7 +317,7 @@
 <body>
     <header>
         <nav class="container">
-            <div class="logo">Your Name</div>
+            <div class="logo">muzamono</div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -330,15 +330,16 @@
 
     <main class="container">
         <section class="hero">
-            <h1>muzamono</h1>
-            <p>A collection of knowledge from your humblest</p>
+            <h1>Hello, call me Zack</h1>
+            <p>I am (not yet) a data engineer</p>
         </section>
 
         <section id="about" class="section">
             <h2>About Me</h2>
-            <p>Hello, I'm Zack. I hold Master's Degree in Mechanical Engineering from a university in Japan. Currently based in Malaysia, my home country. Currently I'm interested in pursuing a career in data fields, especially data engineering.<br> 
+            <p>I hold Master's Degree in Mechanical Engineering from a university in Japan. <br>
+                I am currently pursuing a career in data fields, especially data engineering.<br> 
                 My interests are too many, though mostly revolving around engineering, photography and video games. Though I could and would give my 2 cents about anything really. <br> 
-                This website is just a collection of things I want to share and remember again if I ever need it.</p>
+                This website is just a collection of things I want to share and remember again if I ever need it. I might write in Japanese if I feel like it ;p</p>
         </section>
 
         <section id="projects" class="section">
@@ -346,47 +347,37 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <h3>Real-time Data Pipeline</h3>
-                    <p>Built a scalable real-time data processing pipeline using Apache Kafka and Spark Streaming to handle millions of events per day.</p>
+                    <p>Work in progress</p>
                     <div class="project-tech">
-                        <span class="tech-tag">Apache Kafka</span>
-                        <span class="tech-tag">Spark</span>
                         <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">API</span>
                     </div>
                 </div>
                 
                 <div class="project-card">
-                    <h3>Smart Home Automation</h3>
-                    <p>DIY home automation system using Raspberry Pi, sensors, and custom Python scripts to monitor and control various home systems.</p>
+                    <h3>Simple Database Loader</h3>
+                    <p>Simple loader where csv files are loaded into a relational database (sqlite)</p>
                     <div class="project-tech">
-                        <span class="tech-tag">Raspberry Pi</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">IoT</span>
-                        <span class="tech-tag">Electronics</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>Data Warehouse Migration</h3>
-                    <p>Led the migration of legacy data warehouse to cloud-based solution, improving query performance by 300% and reducing costs.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">AWS</span>
-                        <span class="tech-tag">Redshift</span>
                         <span class="tech-tag">ETL</span>
+                        <span class="tech-tag">Python</span>
                         <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">Pandas</span>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <h3>Custom Workshop Table</h3>
-                    <p>Designed and built a modular workshop table with integrated power outlets, tool storage, and adjustable height mechanism.</p>
+                    <h3>CSV Data Pipeline</h3>
+                    <p>Simple loader for csv files: load raw data, clean and save to new csv</p>
                     <div class="project-tech">
-                        <span class="tech-tag">Woodworking</span>
-                        <span class="tech-tag">Design</span>
-                        <span class="tech-tag">CAD</span>
-                        <span class="tech-tag">Craftsmanship</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">File I/O</span>
+                        <span class="tech-tag">Basic ETL</span>
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -394,25 +385,14 @@
             <h2>Latest Blog Posts</h2>
             <div class="blog-posts">
                 <article class="blog-post">
-                    <div class="blog-post-meta">August 15, 2025</div>
-                    <h3>Optimizing Apache Spark Jobs for Large-Scale Data Processing</h3>
-                    <p>Deep dive into performance tuning techniques that helped reduce our batch processing time from hours to minutes...</p>
+                    <div class="blog-post-meta">August 23, 2025</div>
+                    <h3>Welcome to My website</h3>
+                    <p> Nothing meaningful really. This is my first website actually apart from that one website project we were tasked during diploma.<br>
+                    (Now that I remember it, that site was quite fun because I figured out how to insert images and videos to website, though a local one)<br>
+                    Anyway, let me cook.</p>
                     <a href="#" class="read-more">Read More →</a>
                 </article>
 
-                <article class="blog-post">
-                    <div class="blog-post-meta">August 10, 2025</div>
-                    <h3>Building a Solar-Powered Weather Station</h3>
-                    <p>Step-by-step guide on creating an autonomous weather monitoring station using Arduino, solar panels, and wireless connectivity...</p>
-                    <a href="#" class="read-more">Read More →</a>
-                </article>
-
-                <article class="blog-post">
-                    <div class="blog-post-meta">August 5, 2025</div>
-                    <h3>Data Quality Monitoring with Great Expectations</h3>
-                    <p>How implementing automated data quality checks saved our team countless hours of debugging and improved data reliability...</p>
-                    <a href="#" class="read-more">Read More →</a>
-                </article>
             </div>
         </section>
 
