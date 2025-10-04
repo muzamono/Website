@@ -1,0 +1,29 @@
+{
+  "name": "v2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev", 
+    "build": "next build", 
+    "start": "next start",
+    "lint": "eslint",
+    "tinacms": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"next dev\""
+  },
+  "dependencies": {
+    "@tinacms/cli": "^1.10.3",
+    "gray-matter": "^4.0.3",
+    "next": "15.5.3",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
+    "tinacms": "^2.8.3"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.3",
+    "tailwindcss": "^4"
+  }
+}
