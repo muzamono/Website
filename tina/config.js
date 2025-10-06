@@ -8,11 +8,11 @@ const branch =
   "main";
 
 export default defineConfig({
-  branch,
+  branch: "main",
 
-  clientId: null, //Set to null for local-only. If not; process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
+  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID || null, //Set to null for local-only. If not; process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
   
-  token: null, // Set to null for local-only. If not; process.env.TINA_TOKEN,
+  token: process.env.TINA_TOKEN || null, // Set to null for local-only. If not; process.env.TINA_TOKEN,
 
   build: {
     outputFolder: "admin",
