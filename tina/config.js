@@ -10,9 +10,9 @@ const branch =
 export default defineConfig({
   branch: "main",
 
-  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID || null, //Set to null for local-only. If not; process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
+  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID, //Set to null for local-only. If not; process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
   
-  token: process.env.TINA_TOKEN || null, // Set to null for local-only. If not; process.env.TINA_TOKEN,
+  token: process.env.TINA_TOKEN, // Set to null for local-only. If not; process.env.TINA_TOKEN,
 
   build: {
     outputFolder: "admin",
@@ -25,6 +25,14 @@ export default defineConfig({
     },
   },
   // See docs on content modeling for more info on how to setup new content models: https://tina.io/docs/schema/
+  search: {
+    tina: {
+      indexerToken: process.env.TINA_TOKEN, // Your Search Token
+      stopwordLanguages: ['eng'],
+    },
+    indexBatchSize: 100,
+    maxSearchIndexFieldLength: 100,
+  },
   schema: {
     collections: [
       {
