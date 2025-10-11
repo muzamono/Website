@@ -3,12 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "dotenv -e .env.local next dev",
-    "build": "dotenv -e .env.local next build",
+    "dev": "tinacms dev -c \"next dev\"",
+    "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "tinacms": "dotenv -e .env.local tinacms dev -c \"next dev\"",
-    "tinabuild": "dotenv -e .env.local tinacms build"
+    "lint": "eslint"
   },
   "dependencies": {
     "@tinacms/cli": "^1.10.3",
@@ -23,7 +21,6 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
-    "dotenv-cli": "^10.0.0",
     "eslint": "^9",
     "eslint-config-next": "15.5.3",
     "tailwindcss": "^4"

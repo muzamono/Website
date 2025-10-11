@@ -2,17 +2,17 @@ import { defineConfig } from "tinacms";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch =
-  process.env.GITHUB_BRANCH ||
-  process.env.VERCEL_GIT_COMMIT_REF ||
-  process.env.HEAD ||
+  //process.env.GITHUB_BRANCH ||
+  //process.env.VERCEL_GIT_COMMIT_REF ||
+  //process.env.HEAD ||
   "main";
 
 export default defineConfig({
   branch: "main",
 
-  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID, //Set to null for local-only. If not; process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
+  clientId: null, //process.env.NEXT_PUBLIC_TINA_CLIENT_ID, //Set to null for local-only. If not; process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
   
-  token: process.env.TINA_TOKEN, // Set to null for local-only. If not; process.env.TINA_TOKEN,
+  token: null,//process.env.TINA_TOKEN, // Set to null for local-only. If not; process.env.TINA_TOKEN,
 
   build: {
     outputFolder: "admin",
@@ -25,13 +25,7 @@ export default defineConfig({
     },
   },
   // See docs on content modeling for more info on how to setup new content models: https://tina.io/docs/schema/
-  search: {
-    tina: {
-      indexerToken: process.env.TINA_TOKEN, // Your Search Token
-      stopwordLanguages: ['eng'],
-    },
-    indexBatchSize: 100,
-    maxSearchIndexFieldLength: 100,
+
   },
   schema: {
     collections: [
