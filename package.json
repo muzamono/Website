@@ -9,14 +9,14 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@tinacms/cli": "^1.10.3",
+    "@tinacms/cli": "^0.60.5",
     "gray-matter": "^4.0.3",
-    "next": "15.5.3",
+    "next": "^16.2.2",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
-    "tinacms": "^2.8.3"
+    "tinacms": "^2.2.9"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
