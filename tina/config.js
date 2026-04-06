@@ -10,9 +10,9 @@ const branch =
 export default defineConfig({
   branch: "main",
 
-  clientId: null, //process.env.NEXT_PUBLIC_TINA_CLIENT_ID, //Set to null for local-only. If not; process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
+  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID, //Set to null for local-only. If not; process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
   
-  token: null,//process.env.TINA_TOKEN, // Set to null for local-only. If not; process.env.TINA_TOKEN,
+  token: process.env.TINA_TOKEN, // Set to null for local-only. If not; process.env.TINA_TOKEN,
 
   build: {
     outputFolder: "admin",
