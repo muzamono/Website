@@ -357,10 +357,9 @@ export default function Home({ posts,photos }) {
       >
         <h2 className="text-3xl font-bold mb-6">Let&apos;s Connect</h2>
         <div className="flex justify-center space-x-8 mb-4">
-          <a href="mailto:your.email@example.com" style={{ color: '#667eea' }} className="hover:text-purple-600 transition-colors font-medium">Email</a>
-          <a href="https://linkedin.com/in/yourprofile" target="_blank" style={{ color: '#667eea' }} className="hover:text-purple-600 transition-colors font-medium">LinkedIn</a>
-          <a href="https://github.com/yourusername" target="_blank" style={{ color: '#667eea' }} className="hover:text-purple-600 transition-colors font-medium">GitHub</a>
-          <a href="https://twitter.com/yourusername" target="_blank" style={{ color: '#667eea' }} className="hover:text-purple-600 transition-colors font-medium">Twitter</a>
+          <a href="mailto:m.zakuan7575@gmail.com" style={{ color: '#667eea' }} className="hover:text-purple-600 transition-colors font-medium">Email</a>
+          <a href="www.linkedin.com/in/muhammad-zakuan-2a55a9270" target="_blank" style={{ color: '#667eea' }} className="hover:text-purple-600 transition-colors font-medium">LinkedIn</a>
+          <a href="https://github.com/muzamono" target="_blank" style={{ color: '#667eea' }} className="hover:text-purple-600 transition-colors font-medium">GitHub</a>
         </div>
         <p>&copy; 2025 muzamono. All rights reserved.</p>
       </footer>
